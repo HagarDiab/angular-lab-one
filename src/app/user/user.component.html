@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-sm-12">
+      <div class="form-group row">
+  
+        <label for="username" class="col-sm-2 col-form-label text-light">User Name:</label>
+  
+        <div class="col-sm-8">
+          <!-- Two way binding : get value from the input to make changes with it (ngModel not an built in module)-->
+          <input type="text" name="user" id="course" class="form-control" >
+         
+          <!-- <input type="text" name="user" id="course" class="form-control" [(ngModel)]="usename"> -->
+        </div>
+  
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-primary" (click)="onClick($event)"> Add </button>
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="col-sm-12">
+        <!-- List of users names -->
+        <!-- we need looping here -->
+        <ul class="list-group">
+ 
+            <!-- <app-user *ngFor="let username of usernames" [userData]="username"></app-user> -->
+            <app-user></app-user>
+        </ul>
+    </div>
+  </div>

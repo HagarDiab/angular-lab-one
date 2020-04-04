@@ -145,6 +145,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "lab-one"
+    }
+  },
+  "defaultProject": "lab-one",
+  "cli": {
+    "analytics": false
+  }
 }
