@@ -27,7 +27,7 @@ export class UserComponent implements OnInit {
   }
 
   clearText(){
-    this.user.name="";
+    // this.user.name=""; //what's the error!?
   }
 
   onClick(ev){
